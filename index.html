@@ -1,0 +1,39 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="x.css">
+
+    </head>
+
+    <body>
+        <input style="padding: 300px;" type="text" id="input-field" oninput="changeBackgroundColor()">
+
+        <script>
+            function changeBackgroundColor() {
+                const input = document.getElementById("input-field");
+                const value = input.value;
+
+                if (value.includes("2")) {
+                    input.classList.add("red-background");
+                } else {
+                    input.classList.remove("red-background");
+                } if (value.includes("3")) {
+                    input.classList.add("green-background");
+                } else {
+                    input.classList.remove("green-background");
+                } if (value.includes("4")) {
+                    input.classList.add("blue-background");
+                } else {
+                    input.classList.remove("blue-background");
+                }
+            }
+
+        </script>
+    </body>
+
+    </html>
